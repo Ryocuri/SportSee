@@ -1,0 +1,77 @@
+.activity-chart {
+    background-color: #FBFBFB;
+    border-radius: 5px;
+    padding: 1.5rem;
+    grid-column: 1 / 3;
+}
+
+.activity-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.activity-chart-title {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #20253A;
+    margin: 0;
+}
+
+.activity-chart-legend {
+    display: flex;
+    gap: 2rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.legend-dot-weight {
+    background-color: #282D30;
+}
+
+.legend-dot-calories {
+    background-color: #E60000;
+}
+
+.legend-text {
+    font-size: 0.875rem;
+    color: #74798C;
+}
+
+.activity-tooltip {
+    background-color: #E60000;
+    padding: 0.5rem;
+    border: none;
+    text-align: center;
+    min-width: 39px;
+}
+
+.activity-tooltip p {
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    font-weight: 500;
+    margin: 0.25rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .activity-chart {
+        padding: 1rem;
+    }
+    
+    .activity-chart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}

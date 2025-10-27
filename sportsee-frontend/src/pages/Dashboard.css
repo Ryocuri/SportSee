@@ -1,0 +1,140 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-container {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 117px;
+    padding: 2.5rem 5.625rem 5.375rem 6.75rem;
+    background-color: #FFFFFF;
+}
+
+.dashboard {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    margin-bottom: 4.8rem;
+}
+
+.dashboard-title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000000;
+    margin: 0 0 2.5rem 0;
+}
+
+.user-name {
+    color: #FF0101;
+}
+
+.dashboard-subtitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+.dashboard-content {
+    display: flex;
+    gap: 1.9rem;
+}
+
+.dashboard-charts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+.dashboard-charts-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.9rem;
+}
+
+.dashboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 258px;
+    flex-shrink: 0;
+}
+
+.loading,
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    font-size: 1.5rem;
+    color: #74798C;
+}
+
+.error {
+    color: #FF0101;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-content {
+        padding: 2rem 3rem;
+    }
+    
+    .dashboard-header {
+        margin-bottom: 3rem;
+    }
+    
+    .dashboard-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-content {
+        padding: 2rem;
+        margin-left: 80px;
+    }
+    
+    .dashboard-title {
+        font-size: 2rem;
+    }
+    
+    .dashboard-subtitle {
+        font-size: 1rem;
+    }
+    
+    .dashboard-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .dashboard-charts {
+        gap: 1.5rem;
+    }
+    
+    .dashboard-charts-row {
+        gap: 1.5rem;
+    }
+    
+    .dashboard-sidebar {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .dashboard-sidebar > * {
+        flex: 1;
+        min-width: 200px;
+    }
+}

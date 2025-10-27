@@ -1,0 +1,38 @@
+.sessions-chart {
+    background: linear-gradient(90deg, #FF0000 0%, #E60000 100%);
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    height: 263px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sessions-chart-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+    max-width: 147px;
+    line-height: 1.5;
+}
+
+.sessions-tooltip {
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+    border: none;
+    text-align: center;
+    min-width: 39px;
+}
+
+.sessions-tooltip p {
+    color: #000000;
+    font-size: 0.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .sessions-chart {
+        height: 220px;
+    }
+}

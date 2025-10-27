@@ -1,0 +1,48 @@
+.key-data-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #FBFBFB;
+    border-radius: 5px;
+    min-height: 124px;
+}
+
+.key-data-icon {
+    flex-shrink: 0;
+}
+
+.key-data-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.key-data-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #282D30;
+    margin: 0;
+}
+
+.key-data-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #74798C;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .key-data-card {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .key-data-value {
+        font-size: 1.125rem;
+    }
+    
+    .key-data-label {
+        font-size: 0.75rem;
+    }
+}

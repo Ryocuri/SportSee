@@ -1,0 +1,70 @@
+.score-chart {
+    background-color: #FBFBFB;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 263px;
+    position: relative;
+}
+
+.score-chart-title {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #20253A;
+    margin: 0 0 1rem 0;
+}
+
+.score-chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+}
+
+.score-chart-center::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.score-percentage {
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #282D30;
+    margin: 0 0 0.25rem 0;
+}
+
+.score-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #74798C;
+    margin: 0;
+    line-height: 1.625rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .score-chart {
+        height: 220px;
+    }
+    
+    .score-chart-center::before {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .score-percentage {
+        font-size: 1.25rem;
+    }
+    
+    .score-label {
+        font-size: 0.875rem;
+    }
+}

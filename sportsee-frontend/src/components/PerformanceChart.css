@@ -1,0 +1,11 @@
+.performance-chart {
+    background-color: #282D30;
+    border-radius: 5px;
+    height: 263px;
+}
+
+@media screen and (max-width: 1024px) {
+    .performance-chart {
+        height: 220px;
+    }
+}
