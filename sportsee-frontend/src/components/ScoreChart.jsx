@@ -11,6 +11,11 @@ import './ScoreChart.css'
 function ScoreChart({ score }) {
     const scorePercentage = Math.round(score * 100)
     
+    // Calculate endAngle based on score percentage
+    // Start at 90° (top) and add 360° * percentage for proper progression
+    const startAngle = 90
+    const endAngle = startAngle + (360 * scorePercentage / 100)
+    
     const data = [
         {
             name: 'score',
@@ -23,15 +28,15 @@ function ScoreChart({ score }) {
         <div className="score-chart">
             <h3 className="score-chart-title">Score</h3>
             <ResponsiveContainer width="100%" height="100%">
-                <RadialBarChart 
-                    cx="50%" 
-                    cy="50%" 
-                    innerRadius="70%" 
+                <RadialBarChart
+                    cx="50%"
+                    cy="50%"
+                    innerRadius="70%"
                     outerRadius="80%"
                     barSize={10}
                     data={data}
-                    startAngle={90}
-                    endAngle={450}
+                    startAngle={startAngle}
+                    endAngle={endAngle}
                 >
                     <RadialBar
                         dataKey="value"

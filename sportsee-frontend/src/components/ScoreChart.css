@@ -17,7 +17,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -11%);
     text-align: center;
     pointer-events: none;
 }
@@ -28,8 +28,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     background-color: #FFFFFF;
     border-radius: 50%;
     z-index: -1;
@@ -54,16 +54,16 @@
     .score-chart {
         height: 220px;
     }
-    
+
     .score-chart-center::before {
         width: 120px;
         height: 120px;
     }
-    
+
     .score-percentage {
         font-size: 1.25rem;
     }
-    
+
     .score-label {
         font-size: 0.875rem;
     }
